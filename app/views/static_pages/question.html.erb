@@ -1,2 +1,35 @@
-<h1>StaticPages#question</h1>
-<p>Find me in app/views/static_pages/question.html.erb</p>
+<head>
+<title>質問</title>
+<h1>質問</h1>
+<p>全ての質問に答えてください</p>
+</head>
+<body>
+<form action="/booth_answer_page" method="post">
+  <div>
+    <label for="q1"> 1. AAAAAAA </label> <br>
+    <input type="radio" name="q1" value="yes" > Yes<br>
+    <input type="radio" name="q1" value="no"> No<br>
+    <label for="other"> Other: </label> <br>
+    <textarea name="other_msg_1" placeholder="Other..."></textarea>
+  </div>
+  <br>
+  <div>
+    <label for="q2"> 2. BBBBBBB </label> <br>
+    <input type="radio" name="q2" value="yes" > Yes<br>
+    <input type="radio" name="q2" value="no" > No<br>
+    <label for="other"> Other: </label> <br>
+    <textarea name="other_msg_2" placeholder="Other..."></textarea>
+  </div>
+  <br>
+  <div>
+    <label for="msg"> 応援メッセージ </label> <br>
+    <textarea name="ouen_msg"></textarea>
+  </div>
+  <br>
+  <div class="button">
+    <button type="submit"> 送信する</button>
+  </div>
+    
+</form>
+</body>
+

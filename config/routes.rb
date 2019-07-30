@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   get 'static_pages/question'
 
   get 'static_pages/booth_answer_page'
